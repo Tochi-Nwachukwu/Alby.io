@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import PhotoFrame from "./Components/PhotoFrame";
 import Form from "./Components/Form";
 import axios from "axios";
+import Footer from "./Components/Footer";
 
 function App() {
   const [data, setData] = useState({});
@@ -82,9 +83,9 @@ function App() {
   }
 
   return (
-    <div className="App pt-8 sm:px-16 md:px-4 lg:pl-32   px-4 bg-[#F9F9F9] min-h-screen w-full ">
+    <div className="App pt-8 sm:px-16 md:px-4 lg:pl-32   px-4 bg-[#F9F9F9] min-h-screen w-full pb-8 ">
       <Header />
-      <div className="grid sm:grid-cols-2 grid-cols-1 justify-center ">
+      <div className="grid sm:grid-cols-2 grid-cols-1 justify-center sm:mb-16 ">
         <PhotoFrame
           background={bgImage.image}
           profileImage={personImage.image}
@@ -100,6 +101,7 @@ function App() {
           captureImage={takeSnapShot}
         />
       </div>
+      <Footer/>
     </div>
   );
 }
