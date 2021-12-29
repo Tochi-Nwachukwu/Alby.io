@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
     return (
         <div className='mb-8'>
-            <h1 className="font-bold text-[#0D65D9] sm:text-7xl text-4xl">
+            <h1 className="font-bold text-[#0D65D9] sm:text-6xl text-4xl">
                 Alby.io
             </h1>
 

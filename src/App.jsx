@@ -82,9 +82,9 @@ function App() {
   }
 
   return (
-    <div className="App pt-8 sm:px-16 px-4 bg-[#F9F9F9] min-h-screen w-full ">
+    <div className="App pt-8 sm:px-16 md:px-4 lg:pl-32   px-4 bg-[#F9F9F9] min-h-screen w-full ">
       <Header />
-      <div className="grid sm:grid-cols-2 grid-cols-1">
+      <div className="grid sm:grid-cols-2 grid-cols-1 justify-center ">
         <PhotoFrame
           background={bgImage.image}
           profileImage={personImage.image}

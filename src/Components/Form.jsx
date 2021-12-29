@@ -6,9 +6,9 @@ function Form({getBgFunction, getProfileFunction, getNameFunction,getWriteUpFunc
 
 
     return (
-        <div style={{backgroundImage:`url(${Origami})`}} className='sm:w-3/4 w-full mb-12 sm:mt-0 mt-8'>
+        <div style={{backgroundImage:`url(${Origami})`}} className='sm:w-3/4 md:w-full  lg:w-3/4  sm:ml-8 ml-0 w-full mb-12 sm:mt-0 mt-8 flex md:justify-center '>
 
-            <div className='sm:w-3/4 w-full '>
+            <div className='sm:w-3/4 w-full  '>
 
             
             <h1 className="mt-8 text-[#1E6FD9] text-2xl w-full">
