@@ -6,6 +6,7 @@ import axios from "axios";
 function PhotoFrame({ background, profileImage, attendeeName, writeUpText, triggerCount }) {
 // MY FUNCTIONS ARE DECLARED HERE
 const ref = useRef();
+const hiddenFIleUpload = useRef(null)
 
 const onButtonClick = useCallback(()=>{
     if(ref.current === null){
@@ -31,19 +32,12 @@ const onButtonClick = useCallback(()=>{
 
 
 
-
-
-
-
-
-
-
   return (
     <div
       id="capture"
       ref={ref}
       style={{ backgroundImage:`url(${background})` }}
-      className="w-full bg-[#F2F2F2] flex flex-col items-center justify-center border bg-cover border-[#0D65D9] mt-8 sm:h-[620px] sm:w-[620px] h-[360px] w-[360px]"
+      className="w-full bg-[#F2F2F2] flex flex-col items-center justify-center border bg-cover border-[#0D65D9] mt-8 sm:h-[620px] sm:w-[620px] h-[320px] w-[320px]"
     >
       <div className=" flex flex-col justiy-center   ">
         <div className="bg-white border-4 border-[#0D65D9] rounded-full flex sm:h-[258px] sm:w-[259px] w-[150px] h-[150px] justify-center items-center ">
