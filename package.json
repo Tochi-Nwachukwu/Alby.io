@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "aws s3 sync build/ s3://alby.io-webapp",
+    "prod": "vite build && vite deploy"
   },
   "dependencies": {
     "axios": "^0.24.0",
