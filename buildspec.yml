@@ -11,7 +11,7 @@ phases:
 
 artifacts:
   files:
-    - '/codebuild/output/src801252733/src'
+    - '**/*'
   discard-paths: no
-  base-directory: build
+  base-directory: dist
 
