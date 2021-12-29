@@ -6,9 +6,9 @@ function Form({getBgFunction, getProfileFunction, getNameFunction,getWriteUpFunc
 
 
     return (
-        <div style={{backgroundImage:`url(${Origami})`}} className='sm:w-3/4 w-full mb-12'>
+        <div style={{backgroundImage:`url(${Origami})`}} className='sm:w-3/4 w-full mb-12 sm:mt-0 mt-8'>
 
-            <div className='sm:w-3/4 w-full'>
+            <div className='sm:w-3/4 w-full '>
 
             
             <h1 className="mt-8 text-[#1E6FD9] text-2xl w-full">
@@ -29,15 +29,15 @@ function Form({getBgFunction, getProfileFunction, getNameFunction,getWriteUpFunc
             <input onKeyUp={getNameFunction} type="text"  placeholder='Keep it short and simple like “Caroline”' className='mt-2 bg-white border w-full  border-[#0D65D9] p-4'/>
             
             <h1 className="mt-8 text-[#1E6FD9] text-2xl">
-            Additional text written below
+             "I will be attending" text
             </h1>
             <input onKeyUp={getWriteUpFunction} type="text"  placeholder='Add in your cool “I will be attending” message here' className='mt-2 bg-white border w-full  border-[#0D65D9] p-4'/>
 
 
             <div className="grid grid-cols-2 mt-8 gap-8">
-                <button className='p-4 bg-[#E5E5E5] hover:bg-[#5C9DF9] text-[#0D65D9]'>
+                {/* <button className='p-4 bg-[#E5E5E5] hover:bg-[#5C9DF9] text-[#0D65D9]'>
                 Download image
-                </button>
+                </button> */}
 
                 <button onClick={captureImage} className='p-4 bg-[#5C9DF2] hover:bg-[#0D65D9] text-white'>
                 Create image

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Components/Header";
@@ -20,6 +20,9 @@ function App() {
 
   const API =
     "https://wjpe2rzcad.execute-api.eu-west-2.amazonaws.com/default/getPresignedImageURL";
+
+// THIS FUNCTION IS USED TO MAKE SURE THAT THE PHOTO UPLOADS ONCE THE ICONS ARE CLICKED
+    const hiddenFIleUpload = useRef(null)
 
 
     // THIS FUNCTION POSTS TO AMAZON S3 USING THE ALREDY OBTAINED PRESIGNED URLS
